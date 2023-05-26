@@ -1,0 +1,53 @@
+.info-Cart{
+    padding: 42px;
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+    margin: 56px;
+}
+.ul-items {
+    list-style: none;
+    width: 70%;
+    margin: auto;
+}
+
+.ul-items li {
+    background-color: darkgrey;
+    padding: 12px;
+
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-items li button {
+    margin: 0 20px;
+}
+
+.angles-down-top {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.stepper i {
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stepper input {
+    width: 20px;
+    background-color: darkgray;
+    border: 0;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+}

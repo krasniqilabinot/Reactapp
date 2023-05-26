@@ -1,0 +1,40 @@
+.viwe-prod{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 43px;
+  margin-top: 60px;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: -3px 6px 18px 2px gray;
+}
+/* .viwe-prod img{
+  width: 50%;
+} */
+.card-disa p{
+  display: -webkit-box;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.info-view{
+  background-color: darkgray;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #a29b9b;
+  margin: 3px;
+  margin-left: 0;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  .info:hover{
+    background-color: #fe7442ec !important;
+  }
+ 
+  .info.fa-heart:hover{
+    color: #fefcfc !important;
+  }
