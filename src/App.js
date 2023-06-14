@@ -6,7 +6,6 @@ import Shop from "./pages/Shop"
 import Cart from "./pages/Cart"
 import Dashbord from "./pages/Dashbord"
 import ViewProduct from "./pages/ViewProduct"
-import footer from "./components/FooterCount";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { ProductsContext } from "./ProductsContext";
@@ -16,10 +15,7 @@ function App() {
 
   const [products, setProducts] = useState([])
   useEffect(() => {
-    console.log('apo thirrna')
-    axios.get('https://fakestoreapi.com/products', {
-      params: { limit: 10 }
-    })
+    axios.get('https://fakestoreapi.com/products')
       .then(resp => {
         console.log(resp.data)
         setProducts(resp.data)

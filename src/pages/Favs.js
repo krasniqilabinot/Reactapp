@@ -28,9 +28,12 @@ function Favs() {
   }
   return (
     <>
-    <section className='info-Cart'>
-      <h2>There is no product in the cart!</h2>
-    </section>
+     { products && products.length ===0 ?(
+       <section className='info-Cart'>
+       <h2>There is no product in the favorite!</h2>
+     </section>
+     ): ""}
+   
     <div><ul className='ul-items'>
       {products && products.map((prod, index) => (
         <li key={index} className="py-2">

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../ProductsContext'
 import Product from '../components/Product'
-import FooterCount from '../components/FooterCount'
 
 function Home() {
     let products = useContext(ProductsContext)
@@ -62,7 +61,6 @@ function Home() {
                     </div>
                 </div>
             </section>
-           <FooterCount/>
         </>
     )
 }

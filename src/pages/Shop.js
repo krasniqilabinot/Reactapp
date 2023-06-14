@@ -39,9 +39,15 @@ function Shop() {
   return (
     <section className='produkt'>
       <div className='container py-5'>
+        <div className='p-5 d-flex  'style={{"justifyContent":" space-between"}}>
         <div className='pagination'>
           <i className='fa fa-angle-left' onClick={substractPageNumber} />
           <i className='fa fa-angle-right' onClick={addPageNumber}/>
+        </div>
+        <div>
+          <input type='text' placeholder='Search..'></input>
+         <button> Sort <i className='fa fa-angle-down'></i></button>
+        </div>
         </div>
         <div className='row'>
           {shownProducts && shownProducts.map(prod => (
